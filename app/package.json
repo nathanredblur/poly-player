@@ -1,0 +1,31 @@
+{
+  "name": "poly-player",
+  "productName": "PolyPlayer",
+  "version": "0.1.0",
+  "identifier": "com.example.electron-boilerplate",
+  "description": "Bilingual Video Player",
+  "license": "MIT",
+  "main": "main.js",
+  "repository": "nathanredblur/poly-player",
+  "author": {
+    "name": "Nathan Redblur",
+    "email": "jon.nathan.rich@gmail.com",
+    "url": "github.com/nathanredblur"
+  },
+  "keywords": [
+    "electron-app"
+  ],
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "config": {
+    "target": "development"
+  },
+  "scripts": {
+    "postinstall" : "../vlc-install.sh"
+  },
+  "dependencies": {
+    "fs-jetpack": "^0.6.5",
+    "wcjs-player": "*"
+  }
+}

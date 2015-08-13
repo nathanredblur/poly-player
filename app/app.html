@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Electron Boilerplate</title>
+
+    <link href="./stylesheets/main.css" rel="stylesheet" type="text/css">
+
+    <script src="vendor/electron_boilerplate/env_config.js"></script>
+    <script src="vendor/electron_boilerplate/context_menu.js"></script>
+    <script src="vendor/electron_boilerplate/external_links.js"></script>
+
+    <script src="vendor/require.js"></script>
+    <script>
+        requirejs(['app'], function (app) {});
+    </script>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Polly Player</h1>
+        </header>
+        <section class="main">
+            <div id="player"></div>
+        </section>
+        <footer>
+            Platform: <strong id="platform-info"></strong>
+            Environment <strong id="env-name"></strong>
+            <a href="http://electron.atom.io" class="js-external-link">Electron</a>
+        </footer>
+    </div>
+</body>
+</html>
